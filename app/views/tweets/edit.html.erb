@@ -1,0 +1,5 @@
+<%= form_for(@tweet) do |f| %>
+  <%= render("tweets_form", form_thing: f)%>
+  <%= f.submit("Save") %>
+<% end %>
+

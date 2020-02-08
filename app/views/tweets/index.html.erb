@@ -1,0 +1,9 @@
+<% @tweets.each do |tweet| %>
+  <p>
+    <%= tweet.body %>
+    -
+    <%= link_to("edit", edit_tweet_path(tweet.id)) %>
+    -
+    <%= link_to("delete", tweet_path(tweet.id), method: :delete, data: {confirm: "Are you sure you want to do this?1!?!?!?!!!?!?!"})%>
+  </p>
+<% end %>

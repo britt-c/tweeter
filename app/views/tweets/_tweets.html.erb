@@ -1,0 +1,7 @@
+<% tweets.each do |tweet| %>
+  <div class="tweet-card">
+    <p><%= tweet.body %></p>
+    <date><%= tweet.created_at.to_s(:short) %></date>
+  </div>
+<% end %>
+
